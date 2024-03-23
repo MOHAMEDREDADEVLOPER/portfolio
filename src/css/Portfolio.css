@@ -1,0 +1,158 @@
+ h1 {
+    font-size: 3em;
+    margin-bottom: 30px;
+    color: #52489C;
+    animation: rightSideAni 1.5s ease forwards;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+
+}
+@keyframes navani {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes SocialAni {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes rightSideAni {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+/* Portfolio.css */
+
+/* Style for the section */
+section {
+    padding: 20px;
+}
+
+/* Style for the h1 tag */
+
+
+/* Style for the card container */
+
+
+/* Style for the card */
+/* Portfolio.css */
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    margin-left: 100px;
+    gap: 50px;
+    height: auto;
+    /* max-width: 80%; */
+    padding: 10px;
+    transition: transform 7ms ease-in-out;
+    
+  
+}
+
+.card {
+    width: 18rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden; /* Ensure images do not overflow */
+    background-color: #f1f5f9; /* Set the background color for individual cards */
+    animation: navani 1s ease forwards;
+    animation-delay: calc(.2s * var(--navani));
+}
+
+/* Add hover effect */
+.card:hover {
+    transform: scale(1.1); /* Increase the size of the card on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow effect on hover */
+}
+
+
+/* Style for the card image */
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+/* Style for the card body */
+.card-body {
+    padding: 15px;
+}
+
+/* Style for the card title */
+.card-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #52489C;
+}
+
+/* Style for the card text */
+.card-text {
+    font-size: 16px;
+    color: #1F252E;
+    margin-bottom: 15px;
+}
+
+/* Style for the link */
+a {
+    display: block;
+    margin-top: 10px; /* Add space between text and image */
+}
+
+/* Style for the image inside the link */
+a img {
+    width: 30px; /* Adjust the width of the image */
+    height: auto;
+    
+    /* background-color: #1F252E; */
+}
+/* Portfolio.css */
+
+.button-group {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+
+.button-group button {
+    margin-right: 5px;
+}
+/* Portfolio.css */
+
+.custom-btn {
+    color: #52489C; /* Text color */
+    background-color: transparent; /* Transparent background */
+    border-color: #52489C; /* Border color */
+    border: solid 2px #52489C;
+    padding: 6px;
+    border-radius: 8px;
+    margin: 4px;
+}
+
+.custom-btn:hover {
+    color: #fff; /* Text color on hover */
+    background-color: #1F252E; /* Background color on hover */
+}
+

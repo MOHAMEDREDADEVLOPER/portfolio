@@ -1,0 +1,87 @@
+.Skills {
+    text-align: center;
+    padding: 70px 0;
+    max-width: 900px;
+    /* background-color: #f1f5f9; */
+}
+
+.Skills h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #52489C;
+    animation: rightSideAni 1.5s ease forwards;
+}
+
+.Skills div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.icons {
+    width: 60px; /* Adjust icon size */
+    margin: 20px;
+    transition: transform 0.3s ease;
+    animation: SocialAni 1s ease forwards;
+    animation-delay: calc(.2s * var(--socialAni));
+    /* animation: rightSideAni 1.5s ease forwards; */
+    
+}
+
+.icons:hover {
+    
+    transform: scale(1.1);
+}
+
+.icons img {
+    width: 100%;
+}
+
+.icon-name {
+    font-size: 16px;
+    margin-top: 10px;
+}
+@keyframes SocialAni {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes rightSideAni {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes leftSideAni {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .icons {
+        width: 40px; /* Adjust icon size for smaller screens */
+    }
+    .Skills h1 {
+        width: 40px;
+        display: block;
+    }
+}
